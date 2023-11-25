@@ -1,0 +1,56 @@
+body {
+    background-image: url(imagens/fundo.jpg);
+    width: 92%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 0 1% 0 7.5%;
+}
+
+.principal {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.coluna1,
+.coluna2,
+.coluna3,
+.coluna4,
+.coluna5,
+.coluna6 {
+    margin: 0.5%;
+    flex-grow: 1;
+}
+
+img {
+    width: 100%;
+}
+
+h2 {
+    text-align: left;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+}
+
+@media(max-width: 768px) {
+    .principal {
+        flex-direction: column;
+        margin: 0 0 0 -1.5%;
+    }
+
+    img {
+        width: 100%;
+    }
+}
+
+button {
+    border-radius: 10px;
+}
